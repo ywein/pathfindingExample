@@ -39,10 +39,6 @@ public class Main {
             long[] startCell = Pathfinding.convertToGrid(startX, startY, gridStartX, gridStartY, step);
             long[] endCell = Pathfinding.convertToGrid(endX, endY, gridStartX, gridStartY, step);
 
-            long[] test = Pathfinding.convertToGrid(startX, startY, gridStartX, gridStartY, step);
-            System.out.println(test);
-
-
             List<int[]> path = pathfinding.getPath(startCell, endCell);
             List<double[]> pathCoord = Pathfinding.convertFromGrid(path, gridStartX, gridStartY, step);
 
